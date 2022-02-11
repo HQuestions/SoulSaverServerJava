@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://localhost:3306/ghost</property>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.username"></property>
+        <property name="connection.password"></property>
+        <!--        <property name="connection.autocommit">true</property>-->
+        <mapping class="Common.DAO.AccountsEntity"/>
+        <mapping resource="AccountsEntity.hbm.xml"/>
+        <mapping class="Common.DAO.AmuletcommodityEntity"/>
+        <mapping resource="AmuletcommodityEntity.hbm.xml"/>
+        <mapping class="Common.DAO.BoydresscommodityEntity"/>
+        <mapping resource="BoydresscommodityEntity.hbm.xml"/>
+        <mapping class="Common.DAO.BoyeyescommodityEntity"/>
+        <mapping resource="BoyeyescommodityEntity.hbm.xml"/>
+        <mapping resource="BoyhaircommodityEntity.hbm.xml"/>
+        <mapping class="Common.DAO.BoyhaircommodityEntity"/>
+        <mapping resource="BuycommoditylogEntity.hbm.xml"/>
+        <mapping class="Common.DAO.BuycommoditylogEntity"/>
+        <mapping resource="CharactersEntity.hbm.xml"/>
+        <mapping class="Common.DAO.CharactersEntity"/>
+        <mapping resource="CouponEntity.hbm.xml"/>
+        <mapping class="Common.DAO.CouponEntity"/>
+        <mapping class="Common.DAO.DropDataEntity"/>
+        <mapping resource="DropDataEntity.hbm.xml"/>
+        <mapping resource="Face1CommodityEntity.hbm.xml"/>
+        <mapping class="Common.DAO.Face1CommodityEntity"/>
+        <mapping resource="Face2CommodityEntity.hbm.xml"/>
+        <mapping class="Common.DAO.Face2CommodityEntity"/>
+        <mapping resource="GiftsEntity.hbm.xml"/>
+        <mapping class="Common.DAO.GiftsEntity"/>
+        <mapping resource="GirldresscommodityEntity.hbm.xml"/>
+        <mapping class="Common.DAO.GirldresscommodityEntity"/>
+        <mapping resource="GirleyescommodityEntity.hbm.xml"/>
+        <mapping class="Common.DAO.GirleyescommodityEntity"/>
+        <mapping resource="GirlhaircommodityEntity.hbm.xml"/>
+        <mapping class="Common.DAO.GirlhaircommodityEntity"/>
+        <mapping resource="HatcommodityEntity.hbm.xml"/>
+        <mapping class="Common.DAO.HatcommodityEntity"/>
+        <mapping class="Common.DAO.ItemsEntity"/>
+        <mapping resource="ItemsEntity.hbm.xml"/>
+        <mapping resource="KeymapsEntity.hbm.xml"/>
+        <mapping class="Common.DAO.KeymapsEntity"/>
+        <mapping resource="MantlecommodityEntity.hbm.xml"/>
+        <mapping class="Common.DAO.MantlecommodityEntity"/>
+        <mapping resource="PetcommodityEntity.hbm.xml"/>
+        <mapping class="Common.DAO.PetcommodityEntity"/>
+        <mapping resource="PetsEntity.hbm.xml"/>
+        <mapping class="Common.DAO.PetsEntity"/>
+        <mapping resource="ProducecommodityEntity.hbm.xml"/>
+        <mapping class="Common.DAO.ProducecommodityEntity"/>
+        <mapping resource="QuestsEntity.hbm.xml"/>
+        <mapping class="Common.DAO.QuestsEntity"/>
+        <mapping resource="SkillsEntity.hbm.xml"/>
+        <mapping class="Common.DAO.SkillsEntity"/>
+        <mapping resource="StoragesEntity.hbm.xml"/>
+        <mapping class="Common.DAO.StoragesEntity"/>
+        <mapping class="Common.DAO.TalismancommodityEntity"/>
+        <mapping resource="TalismancommodityEntity.hbm.xml"/>
+        <mapping resource="UseslotEntity.hbm.xml"/>
+        <mapping class="Common.DAO.UseslotEntity"/>
+
+
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>

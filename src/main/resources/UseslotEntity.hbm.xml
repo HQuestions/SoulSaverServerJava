@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="Common.DAO.UseslotEntity" table="useslot" schema="ghost">
+        <id name="id">
+            <column name="id" sql-type="int(11)"/>
+        </id>
+        <property name="cid">
+            <column name="cid" sql-type="int(11)"/>
+        </property>
+        <property name="type">
+            <column name="type" sql-type="int(3)"/>
+        </property>
+        <property name="slot">
+            <column name="slot" sql-type="int(3)"/>
+        </property>
+    </class>
+</hibernate-mapping>

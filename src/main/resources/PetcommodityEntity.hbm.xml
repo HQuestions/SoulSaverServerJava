@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="Common.DAO.PetcommodityEntity" table="petcommodity" schema="ghost">
+        <id name="id">
+            <column name="id" sql-type="int(11)"/>
+        </id>
+        <property name="itemId">
+            <column name="itemID" sql-type="int(11)"/>
+        </property>
+        <property name="price">
+            <column name="price" sql-type="int(11)"/>
+        </property>
+        <property name="bargainPrice">
+            <column name="bargainPrice" sql-type="int(11)"/>
+        </property>
+        <property name="term">
+            <column name="term" sql-type="int(11)"/>
+        </property>
+        <property name="flag">
+            <column name="flag" sql-type="int(11)"/>
+        </property>
+    </class>
+</hibernate-mapping>

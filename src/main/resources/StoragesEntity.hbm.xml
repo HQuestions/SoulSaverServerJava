@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="Common.DAO.StoragesEntity" table="storages" schema="ghost">
+        <id name="id">
+            <column name="id" sql-type="int(11)"/>
+        </id>
+        <property name="cid">
+            <column name="cid" sql-type="int(11)"/>
+        </property>
+        <property name="itemId">
+            <column name="itemID" sql-type="int(11)"/>
+        </property>
+        <property name="quantity">
+            <column name="quantity" sql-type="int(11)"/>
+        </property>
+        <property name="spirit">
+            <column name="spirit" sql-type="int(11)"/>
+        </property>
+        <property name="level1">
+            <column name="level1" sql-type="int(3)"/>
+        </property>
+        <property name="level2">
+            <column name="level2" sql-type="int(3)"/>
+        </property>
+        <property name="level3">
+            <column name="level3" sql-type="int(3)"/>
+        </property>
+        <property name="level4">
+            <column name="level4" sql-type="int(3)"/>
+        </property>
+        <property name="level5">
+            <column name="level5" sql-type="int(3)"/>
+        </property>
+        <property name="level6">
+            <column name="level6" sql-type="int(3)"/>
+        </property>
+        <property name="level7">
+            <column name="level7" sql-type="int(3)"/>
+        </property>
+        <property name="level8">
+            <column name="level8" sql-type="int(3)"/>
+        </property>
+        <property name="level9">
+            <column name="level9" sql-type="int(3)"/>
+        </property>
+        <property name="level10">
+            <column name="level10" sql-type="int(3)"/>
+        </property>
+        <property name="fusion">
+            <column name="fusion" sql-type="int(3)"/>
+        </property>
+        <property name="isLocked">
+            <column name="isLocked" sql-type="int(1)"/>
+        </property>
+        <property name="icon">
+            <column name="icon" sql-type="int(11)"/>
+        </property>
+        <property name="term">
+            <column name="term" sql-type="int(11)"/>
+        </property>
+        <property name="type">
+            <column name="type" sql-type="int(11)"/>
+        </property>
+        <property name="slot">
+            <column name="slot" sql-type="int(11)"/>
+        </property>
+        <property name="money">
+            <column name="money" sql-type="int(10)"/>
+        </property>
+    </class>
+</hibernate-mapping>

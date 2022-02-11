@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="Common.DAO.QuestsEntity" table="quests" schema="ghost">
+        <id name="id">
+            <column name="id" sql-type="int(11)"/>
+        </id>
+        <property name="cid">
+            <column name="cid" sql-type="int(11)"/>
+        </property>
+        <property name="questId">
+            <column name="questId" sql-type="int(8)"/>
+        </property>
+        <property name="stage">
+            <column name="stage" sql-type="int(3)"/>
+        </property>
+        <property name="completeMonster">
+            <column name="completeMonster" sql-type="int(11)"/>
+        </property>
+        <property name="requireMonster">
+            <column name="requireMonster" sql-type="int(11)"/>
+        </property>
+        <property name="questState">
+            <column name="questState" sql-type="int(3)"/>
+        </property>
+    </class>
+</hibernate-mapping>

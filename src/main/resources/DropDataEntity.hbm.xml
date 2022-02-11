@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="Common.DAO.DropDataEntity" table="drop_data" schema="ghost">
+        <id name="id">
+            <column name="id" sql-type="int(11)"/>
+        </id>
+        <property name="mobId">
+            <column name="mobID" sql-type="int(11)"/>
+        </property>
+        <property name="itemId">
+            <column name="itemID" sql-type="int(11)"/>
+        </property>
+        <property name="minQuantity">
+            <column name="min_quantity" sql-type="int(11)"/>
+        </property>
+        <property name="maxQuantity">
+            <column name="max_quantity" sql-type="int(11)"/>
+        </property>
+        <property name="questId">
+            <column name="questID" sql-type="int(11)"/>
+        </property>
+        <property name="chance">
+            <column name="chance" sql-type="int(11)"/>
+        </property>
+    </class>
+</hibernate-mapping>

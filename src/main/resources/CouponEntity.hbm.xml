@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="Common.DAO.CouponEntity" table="coupon" schema="ghost">
+        <id name="id">
+            <column name="id" sql-type="int(11)"/>
+        </id>
+        <property name="code">
+            <column name="code" sql-type="varchar(20)" length="20"/>
+        </property>
+        <property name="itemId">
+            <column name="itemID" sql-type="int(8)"/>
+        </property>
+        <property name="quantity">
+            <column name="quantity" sql-type="int(3)"/>
+        </property>
+        <property name="valid">
+            <column name="valid" sql-type="int(1)"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="Common.DAO.BuycommoditylogEntity" table="buycommoditylog" schema="ghost">
+        <id name="id">
+            <column name="id" sql-type="int(11)"/>
+        </id>
+        <property name="name">
+            <column name="name" sql-type="varchar(20)" length="20"/>
+        </property>
+        <property name="itemId">
+            <column name="itemID" sql-type="int(11)"/>
+        </property>
+        <property name="itemName">
+            <column name="itemName" sql-type="varchar(62)" length="62"/>
+        </property>
+    </class>
+</hibernate-mapping>

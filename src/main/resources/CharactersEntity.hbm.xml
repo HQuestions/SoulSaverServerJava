@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="Common.DAO.CharactersEntity" table="characters" schema="ghost">
+        <id name="id">
+            <column name="id" sql-type="int(11)"/>
+        </id>
+        <property name="accountId">
+            <column name="accountId" sql-type="int(11)"/>
+        </property>
+        <property name="worldId">
+            <column name="worldId" sql-type="int(1)"/>
+        </property>
+        <property name="name">
+            <column name="name" sql-type="varchar(20)" length="20"/>
+        </property>
+        <property name="title">
+            <column name="title" sql-type="varchar(20)" length="20"/>
+        </property>
+        <property name="gender">
+            <column name="gender" sql-type="int(1)"/>
+        </property>
+        <property name="hair">
+            <column name="hair" sql-type="int(8)"/>
+        </property>
+        <property name="eyes">
+            <column name="eyes" sql-type="int(8)"/>
+        </property>
+        <property name="level">
+            <column name="level" sql-type="int(4)"/>
+        </property>
+        <property name="classId">
+            <column name="classId" sql-type="int(4)"/>
+        </property>
+        <property name="classLv">
+            <column name="classLv" sql-type="int(4)"/>
+        </property>
+        <property name="guild">
+            <column name="guild" sql-type="int(4)"/>
+        </property>
+        <property name="hp">
+            <column name="hp" sql-type="int(8)"/>
+        </property>
+        <property name="maxHp">
+            <column name="maxHp" sql-type="int(8)"/>
+        </property>
+        <property name="mp">
+            <column name="mp" sql-type="int(8)"/>
+        </property>
+        <property name="maxMp">
+            <column name="maxMp" sql-type="int(8)"/>
+        </property>
+        <property name="fury">
+            <column name="fury" sql-type="int(8)"/>
+        </property>
+        <property name="maxFury">
+            <column name="maxFury" sql-type="int(8)"/>
+        </property>
+        <property name="exp">
+            <column name="exp" sql-type="int(8)"/>
+        </property>
+        <property name="rank">
+            <column name="rank" sql-type="int(8)"/>
+        </property>
+        <property name="money">
+            <column name="money" sql-type="int(8)"/>
+        </property>
+        <property name="cStr">
+            <column name="c_str" sql-type="int(4)"/>
+        </property>
+        <property name="cDex">
+            <column name="c_dex" sql-type="int(4)"/>
+        </property>
+        <property name="cVit">
+            <column name="c_vit" sql-type="int(4)"/>
+        </property>
+        <property name="cInt">
+            <column name="c_int" sql-type="int(4)"/>
+        </property>
+        <property name="upgradeStr">
+            <column name="upgradeStr" sql-type="int(4)"/>
+        </property>
+        <property name="upgradeDex">
+            <column name="upgradeDex" sql-type="int(4)"/>
+        </property>
+        <property name="upgradeVit">
+            <column name="upgradeVit" sql-type="int(4)"/>
+        </property>
+        <property name="upgradeInt">
+            <column name="upgradeInt" sql-type="int(4)"/>
+        </property>
+        <property name="attack">
+            <column name="attack" sql-type="int(4)"/>
+        </property>
+        <property name="maxAttack">
+            <column name="maxAttack" sql-type="int(4)"/>
+        </property>
+        <property name="upgradeAttack">
+            <column name="upgradeAttack" sql-type="int(4)"/>
+        </property>
+        <property name="magic">
+            <column name="magic" sql-type="int(4)"/>
+        </property>
+        <property name="maxMagic">
+            <column name="maxMagic" sql-type="int(4)"/>
+        </property>
+        <property name="upgradeMagic">
+            <column name="upgradeMagic" sql-type="int(4)"/>
+        </property>
+        <property name="avoid">
+            <column name="avoid" sql-type="int(4)"/>
+        </property>
+        <property name="defense">
+            <column name="defense" sql-type="int(4)"/>
+        </property>
+        <property name="upgradeDefense">
+            <column name="upgradeDefense" sql-type="int(4)"/>
+        </property>
+        <property name="abilityBonus">
+            <column name="abilityBonus" sql-type="int(4)"/>
+        </property>
+        <property name="skillBonus">
+            <column name="skillBonus" sql-type="int(4)"/>
+        </property>
+        <property name="jumpHeight">
+            <column name="jumpHeight" sql-type="int(4)"/>
+        </property>
+        <property name="mapX">
+            <column name="mapX" sql-type="int(4)"/>
+        </property>
+        <property name="mapY">
+            <column name="mapY" sql-type="int(4)"/>
+        </property>
+        <property name="playerX">
+            <column name="playerX" sql-type="int(4)"/>
+        </property>
+        <property name="playerY">
+            <column name="playerY" sql-type="int(4)"/>
+        </property>
+        <property name="position">
+            <column name="position" sql-type="int(4)"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="Common.DAO.AccountsEntity" table="accounts" schema="ghost">
+        <id name="id">
+            <column name="id" sql-type="int(11)"/>
+        </id>
+        <property name="username">
+            <column name="username" sql-type="varchar(20)" length="20"/>
+        </property>
+        <property name="password">
+            <column name="password" sql-type="varchar(128)" length="128"/>
+        </property>
+        <property name="creation">
+            <column name="creation" sql-type="datetime"/>
+        </property>
+        <property name="isLoggedIn">
+            <column name="isLoggedIn" sql-type="int(1)"/>
+        </property>
+        <property name="isBanned">
+            <column name="isBanned" sql-type="int(1)"/>
+        </property>
+        <property name="isMaster">
+            <column name="isMaster" sql-type="int(1)"/>
+        </property>
+        <property name="gamePoints">
+            <column name="gamePoints" sql-type="int(11)"/>
+        </property>
+        <property name="giftPoints">
+            <column name="giftPoints" sql-type="int(11)"/>
+        </property>
+        <property name="bonusPoints">
+            <column name="bonusPoints" sql-type="int(11)"/>
+        </property>
+        <property name="totalDonate">
+            <column name="total_donate" sql-type="int(8)"/>
+        </property>
+        <property name="vip">
+            <column name="VIP" sql-type="int(1)"/>
+        </property>
+    </class>
+</hibernate-mapping>
