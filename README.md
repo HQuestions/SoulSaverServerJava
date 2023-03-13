@@ -6,7 +6,7 @@
 
 遊戲伺服器尚未完成!
 
-使用Netty4 資料庫部分使用Hibernate
+使用Netty4 資料庫框架部分使用Hibernate
 
 ![image](https://github.com/jeff87218/SoulSaverServerJava/blob/master/SV1.png)
 
